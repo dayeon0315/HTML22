@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나다연의 포트폴리오</title>
+
+    <title>나다연의 이력서</title>
+    
     <link rel="stylesheet" href="styles.css">
     <style>
-        * {
+        {
             box-sizing: border-box;
         }
 
@@ -14,12 +16,12 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #f4f4f4, #e0e0e0);
-            color: #333;
+            background: #ececec;
+            color: #000000;
         }
 
         header {
-            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            background: linear-gradient(to right, #ffafbd, #ffbb94);
             color: #fff;
             padding: 30px;
             text-align: center;
@@ -28,7 +30,7 @@
 
         header h1 {
             font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.623);
             margin: 0;
         }
 
@@ -52,7 +54,7 @@
         }
 
         nav a:hover {
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(155, 155, 155, 0.459);
         }
 
         main {
@@ -74,14 +76,14 @@
 
         h2 {
             color: #ff6f61;
-            border-bottom: 2px solid #ff6f61;
+            border-bottom: 4px solid #ff6f61;
             padding-bottom: 5px;
         }
 
         footer {
             text-align: center;
             padding: 15px 0;
-            background: #ffafbd;
+            background: linear-gradient(to right, #ffafbd, #ffbb94);
             color: #fff;
             position: relative;
             bottom: 0;
@@ -113,23 +115,13 @@
         }
 
         button.yes {
-            background-color: #28a745;
+            background-color: #20da4b;
             color: white;
-        }
-
-        button.yes:hover {
-            background-color: #218838;
-            transform: scale(1.05);
         }
 
         button.no {
-            background-color: #dc3545;
+            background-color: #e9283b;
             color: white;
-        }
-
-        button.no:hover {
-            background-color: #c82333;
-            transform: scale(1.05);
         }
 
         input {
@@ -139,6 +131,18 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             width: 300px;
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: auto; 
+            border-radius: 10px; 
+            margin-right: 20px; 
         }
 
         @media (max-width: 768px) {
@@ -154,8 +158,19 @@
             header h1 {
                 font-size: 2em;
             }
+
+            .profile-container {
+                flex-direction: column;
+                align-items: flex-start; 
+            }
+
+            .profile-image {
+                margin-right: 0; 
+                margin-bottom: 10px;
+            }
         }
     </style>
+
     <script>
         function showPortfolio() {
             document.getElementById('welcome').style.display = 'none';
@@ -163,15 +178,17 @@
         }
 
         function hidePortfolio() {
-            alert("포트폴리오를 보지 않습니다.");
+            alert("이력서를 보지 않습니다.");
         }
+    
     </script>
 </head>
+
 <body>
     <div id="welcome">
-        <h1>방문자 이름을 입력해주세요</h1>
-        <input type="text" id="visitorName" placeholder="이름을 입력하세요" />
-        <h1>포트폴리오를 보겠습니까?</h1>
+        <h1>방문자 이름을 입력해주세요.</h1>
+        <input type="text" id="visitorname" placeholder="이름을 입력하세요." />
+        <h1>이력서를 보겠습니까?</h1>
         <div>
             <button class="yes" onclick="showPortfolio()">YES</button>
             <button class="no" onclick="hidePortfolio()">NO</button>
@@ -180,72 +197,97 @@
 
     <div id="portfolio">
         <header>
-            <h1>나다연의 포트폴리오</h1>
+            <h1>나다연의 이력서</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">소개</a></li>
-                    <li><a href="#projects">프로젝트</a></li>
-                    <li><a href="#skills">기술 스택</a></li>
-                    <li><a href="#contact">연락처</a></li>
+                    <li><a href="#introduce">Introduce</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio-table">Portfolio</a></li>
                 </ul>
             </nav>
         </header>
+
         <main>
-            <section id="about">
-                <h2>소개</h2>
-                <h4>안녕하세요! 저는 한양여자대학교 빅데이터과 2302546 나다연입니다. 데이터 분석과 웹 개발에 관심이 있습니다.</h4>
+            <section id="introduce">
+                <h2>Introduce</h2>
+                <div class="profile-container">
+                    <img src="C:\Users\dayeo\Downloads\프로필 이미지.webp" alt="프로필 이미지" class="profile-image" />
+                    
+                    <ol>
+                        <h4>이름 : 나다연</h4>
+                        <h4>생년월일 : 2005.03.15 (만 19세)</h4>
+                        <h4>주소 : 경기도 의정부시</h4>
+                    </ol>
+
+                    <ol>
+                        <h4>연락처 : 010-8225-2083</h4>
+                        <h4>이메일 : ekdus05315@gmail.com</h4>
+                    </ol>
+                </div>
             </section>
-            <section id="projects">
-                <h2>프로젝트</h2>
+
+            <section id="about">
+                <h2>About</h2>
                 <ul>
                     <li>
-                        <h3>프로젝트 A</h3>
-                        <p>이 웹 페이지는 HTML, CSS를 사용해 만든 웹 페이지입니다. 웹 개발 기본 수업시간에 배운 내용을 토대로 만들었습니다.</p>
+                        <h3>학력</h3>
+                        <p>새말초등학교 졸업</p>
+                        <p>천보중학교 졸업</p>
+                        <p>송현고등학교 졸업</p>
+                        <p>한양여자대학교 빅데이터과 재학</p>
                     </li>
+
+                    &nbsp;
+
                     <li>
-                        <h3>프로젝트 B</h3>
-                        <p>이 웹 페이지는 나다연의 포트폴리오를 보여줍니다.</p>
+                        <h3>경력</h3>
+                        <p>無</p>
                     </li>
                 </ul>
             </section>
+
             <section id="skills">
-                <h2>기술 스택</h2>
+                <h2>Skills</h2>
                 <ul>
                     <li>HTML, CSS</li>
+                    &nbsp;
                     <li>Python</li>
+                    &nbsp;
+                    <li>Arduino</li>
                 </ul>
             </section>
-            <section id="contact">
-                <h2>연락처</h2>
-                <ul>
-                    <li>전화번호 : <strong>010-8225-2083</strong></li>
-                    <li>이메일 : <strong>ekdus05315@gmail.com</strong></li>
-                </ul>
-            </section>
+
             <section id="portfolio-table">
-                <h2>포트폴리오 표</h2>
+                <h2>Portfolio</h2>
                 <table border="1" style="width: 100%; border-collapse: collapse;">
                     <tr>
                         <th>프로젝트명</th>
                         <th>설명</th>
                         <th>기간</th>
                     </tr>
+
                     <tr>
-                        <td>프로젝트 A</td>
-                        <td>HTML, CSS로 만든 웹 페이지</td>
-                        <td>2024년 9월 - 2024년 11월</td>
+                        <td>&nbsp; 프로젝트 A</td>
+                        <td>&nbsp; HTML, CSS로 만든 웹 페이지</td>
+                        <td>&nbsp; 2024.09 - 2024.11</td>
                     </tr>
+
                     <tr>
-                        <td>프로젝트 B</td>
-                        <td>나다연의 포트폴리오 웹 페이지</td>
-                        <td>2024년 11월 - 2024년 12월</td>
+                        <td>&nbsp; 프로젝트 B</td>
+                        <td>&nbsp; 나다연의 이력서 웹 페이지</td>
+                        <td>&nbsp; 2024.11 - 2024.12</td>
                     </tr>
                 </table>
             </section>
+
         </main>
+
         <footer>
             <p>&copy; 2024 나다연</p>
         </footer>
+
     </div>
+
 </body>
 </html>
