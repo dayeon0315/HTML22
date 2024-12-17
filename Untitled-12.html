@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나다연의 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #ff6f61;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #ffafbd;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #welcome {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        #portfolio {
+            display: none;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            display: inline-block;
+        }
+
+        button.yes {
+            background-color: #28a745;
+            color: white;
+        }
+
+        button.yes:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        button.no {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        button.no:hover {
+            background-color: #c82333;
+            transform: scale(1.05);
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            header {
+                padding: 20px 0;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+    <script>
+        function showPortfolio() {
+            document.getElementById('welcome').style.display = 'none';
+            document.getElementById('portfolio').style.display = 'block';
+        }
+
+        function hidePortfolio() {
+            alert("포트폴리오를 보지 않습니다.");
+        }
+    </script>
+</head>
+<body>
+    <div id="welcome">
+        <h1>방문자 이름을 입력해주세요</h1>
+        <input type="text" id="visitorName" placeholder="이름을 입력하세요" />
+        <h1>포트폴리오를 보겠습니까?</h1>
+        <div>
+            <button class="yes" onclick="showPortfolio()">YES</button>
+            <button class="no" onclick="hidePortfolio()">NO</button>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <header>
+            <h1>나다연의 포트폴리오</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#projects">프로젝트</a></li>
+                    <li><a href="#skills">기술 스택</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>소개</h2>
+                <h4>안녕하세요! 저는 한양여자대학교 빅데이터과 2302546 나다연입니다. 데이터 분석과 웹 개발에 관심이 있습니다.</h4>
+            </section>
+            <section id="projects">
+                <h2>프로젝트</h2>
+                <ul>
+                    <li>
+                        <h3>프로젝트 A</h3>
+                        <p>이 웹 페이지는 HTML, CSS를 사용해 만든 웹 페이지입니다. 웹 개발 기본 수업시간에 배운 내용을 토대로 만들었습니다.</p>
+                    </li>
+                    <li>
+                        <h3>프로젝트 B</h3>
+                        <p>이 웹 페이지는 나다연의 포트폴리오를 보여줍니다.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="skills">
+                <h2>기술 스택</h2>
+                <ul>
+                    <li>HTML, CSS</li>
+                    <li>Python</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>연락처</h2>
+                <ul>
+                    <li>전화번호 : <strong>010-8225-2083</strong></li>
+                    <li>이메일 : <strong>ekdus05315@gmail.com</strong></li>
+                </ul>
+            </section>
+            <section id="portfolio-table">
+                <h2>포트폴리오 표</h2>
+                <table border="1" style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <th>프로젝트명</th>
+                        <th>설명</th>
+                        <th>기간</th>
+                    </tr>
+                    <tr>
+                        <td>프로젝트 A</td>
+                        <td>HTML, CSS로 만든 웹 페이지</td>
+                        <td>2023년 1월 - 2023년 2월</td>
+                    </tr>
+                    <tr>
+                        <td>프로젝트 B</td>
+                        <td>나다연의 포트폴리오 웹 페이지</td>
+                        <td>2023년 3월 - 2023년 4월</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 나다연</p>
+        </footer>
+    </div>
+</body>
+</html>
