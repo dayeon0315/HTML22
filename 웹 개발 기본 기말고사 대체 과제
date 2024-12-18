@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>나다연의 이력서</title>
+    <title>구자욱의 이력서</title>
     
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -197,7 +197,7 @@
 
     <div id="portfolio">
         <header>
-            <h1>나다연의 이력서</h1>
+            <h1>구자욱의 이력서</h1>
             <nav>
                 <ul>
                     <li><a href="#introduce">Introduce</a></li>
@@ -212,17 +212,17 @@
             <section id="introduce">
                 <h2>Introduce</h2>
                 <div class="profile-container">
-                    <img src="C:\Users\dayeo\Downloads\프로필 이미지.webp" alt="프로필 이미지" class="profile-image" />
+                    <img src="C:\Users\User\Downloads\프로필 이미지.webp" alt="프로필 이미지" class="profile-image" />
                     
                     <ol>
-                        <h4>이름 : 나다연</h4>
-                        <h4>생년월일 : 2005.03.15 (만 19세)</h4>
-                        <h4>주소 : 경기도 의정부시</h4>
+                        <h4>이름 : 구자욱</h4>
+                        <h4>생년월일 : 1993.03.04 (만 31세)</h4>
+                        <h4>주소 : 대구광역시 수성구 범어동</h4>
                     </ol>
 
                     <ol>
-                        <h4>연락처 : 010-8225-2083</h4>
-                        <h4>이메일 : ekdus05315@gmail.com</h4>
+                        <h4>연락처 : 010-2012-0012</h4>
+                        <h4>이메일 : samsungKJW@gmail.com</h4>
                     </ol>
                 </div>
             </section>
@@ -232,17 +232,17 @@
                 <ul>
                     <li>
                         <h3>학력</h3>
-                        <p>새말초등학교 졸업</p>
-                        <p>천보중학교 졸업</p>
-                        <p>송현고등학교 졸업</p>
-                        <p>한양여자대학교 빅데이터과 재학</p>
+                        <p>대구본리초등학교 졸업</p>
+                        <p>경복중학교 졸업</p>
+                        <p>대구고등학교 졸업</p>
                     </li>
 
                     &nbsp;
 
                     <li>
                         <h3>경력</h3>
-                        <p>無</p>
+                        <p>2012 삼성라이온즈 입단</p>
+                        <p>2012~2014 상무 피닉스 야구단</p>
                     </li>
                 </ul>
             </section>
@@ -250,11 +250,11 @@
             <section id="skills">
                 <h2>Skills</h2>
                 <ul>
-                    <li>HTML, CSS</li>
+                    <li>안타</li>
                     &nbsp;
-                    <li>Python</li>
+                    <li>홈런</li>
                     &nbsp;
-                    <li>Arduino</li>
+                    <li>도루</li>
                 </ul>
             </section>
 
@@ -275,7 +275,7 @@
 
                     <tr>
                         <td>&nbsp; 프로젝트 B</td>
-                        <td>&nbsp; 나다연의 이력서 웹 페이지</td>
+                        <td>&nbsp; 구자욱의 이력서 웹 페이지</td>
                         <td>&nbsp; 2024.11 - 2024.12</td>
                     </tr>
                 </table>
@@ -284,7 +284,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2024 나다연</p>
+            <p>&copy; 2024 구자욱</p>
         </footer>
 
     </div>
